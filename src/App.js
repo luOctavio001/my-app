@@ -7,168 +7,222 @@ import imgImprimir from './imagenes/imprimir.jpg'
 import imgSalir from './imagenes/salir.png'
 
 function TableDetalle(props) {
-  let dommy3 = [
-    {
-      nombre: 'INSTAL FAENAS Y OBRAS',
-      costo1: '949.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'INSTAL FAENAS Y OBRAS',
-      costo1: '949.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'IVA',
-      costo1: '39.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'INSTAL FAENAS Y OBRAS',
-      costo1: '949.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'IVA',
-      costo1: '39.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'INSTAL FAENAS Y OBRAS',
-      costo1: '949.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'IVA',
-      costo1: '39.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'INSTAL FAENAS Y OBRAS',
-      costo1: '949.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'OTROS',
-      costo1: '949.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'IVA',
-      costo1: '39.00',
-      incremento1: '1.71',
-      costo2: '618.00',
-      incremento2: '69.99',
-      costo3: '618.00',
-      incremento3: '69.99',
-      costo4: '618.00',
-      incremento4: '69.99'
-    },
-    {
-      nombre: 'TOTAL',
-      costo1: '39.00',
-      incremento1: '',
-      costo2: '618.00',
-      incremento2: '6.10',
-      costo3: '618.00',
-      incremento3: '0.00',
-      costo4: '618.00',
-      incremento4: '6.10'
-    }
-  ]
+  let dommy3 = {
+    data: [
+      {
+        nombre: 'INSTAL FAENAS Y OBRAS',
+        costo1: '949.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'INSTAL FAENAS Y OBRAS',
+        costo1: '949.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'IVA',
+        costo1: '39.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'INSTAL FAENAS Y OBRAS',
+        costo1: '949.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'IVA',
+        costo1: '39.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'INSTAL FAENAS Y OBRAS',
+        costo1: '949.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'IVA',
+        costo1: '39.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'INSTAL FAENAS Y OBRAS',
+        costo1: '949.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'OTROS',
+        costo1: '949.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'IVA',
+        costo1: '39.00',
+        incremento1: '1.71',
+        costo2: '618.00',
+        incremento2: '69.99',
+        costo3: '618.00',
+        incremento3: '69.99',
+        costo4: '618.00',
+        incremento4: '69.99'
+      },
+      {
+        nombre: 'TOTAL',
+        costo1: '39.00',
+        incremento1: '',
+        costo2: '618.00',
+        incremento2: '6.10',
+        costo3: '618.00',
+        incremento3: '0.00',
+        costo4: '618.00',
+        incremento4: '6.10'
+      }],
+    costo1: 554510,
+    incremento1: '',
+    costo2: 3327,
+    incremento2: 6.10,
+    costo3: 0,
+    incremento3: 0,
+    costo4: 3327,
+    incremento4: 0,
+    montoCorregido: 3327,
+    factorCorregido: 100,
+    montoDevolucion: 450,
+    factorDevolucion: 13.52,
+    montoMaximo: 2357,
+    factorMaximo: 0
+  }
 
   return (
     <div className="scrollTab">
-    <table>
-      <thead>
-        <tr className="header-table">
-          <th rowSpan="2" colSpan="1" scope="col">Partidas/Montos</th>
-          <th rowSpan="1" colSpan="2" scope="col">
-            Costo Total del Proyecto
-          </th>
-          <th rowSpan="1" colSpan="2" scope="col">
-            Total Avance a la Fecha
-          </th>
-          <th rowSpan="1" colSpan="2" scope="col">
-            Total Avance Anterior
-          </th>
-          <th rowSpan="1" colSpan="2" scope="col">
-            Total Avance del Periodo
-          </th>
-        </tr>
-        <tr className="header-table">
-          {
-            props.columnas.map(column =>
-              column.des !== 'Partidas/Montos' ?
-                <th rowSpan="1" colSpan="1" scope="col">{column.des}</th> : '')
-          }
-        </tr>
-      </thead>
-      <tbody>
-        {
-          dommy3.map(el => <tr className={'footer' + el.nombre}>
+      <table>
+        <thead>
+          <tr className="header-table">
+            <th rowSpan="2" colSpan="1" scope="col">Partidas/Montos</th>
+            <th rowSpan="1" colSpan="2" scope="col">
+              Costo Total del Proyecto
+            </th>
+            <th rowSpan="1" colSpan="2" scope="col">
+              Total Avance a la Fecha
+            </th>
+            <th rowSpan="1" colSpan="2" scope="col">
+              Total Avance Anterior
+            </th>
+            <th rowSpan="1" colSpan="2" scope="col">
+              Total Avance del Periodo
+            </th>
+          </tr>
+          <tr className="header-table">
             {
               props.columnas.map(column =>
-                <td className={column.id + ' ' + el[column.id]}>{el[column.id]}</td>)
+                column.des !== 'Partidas/Montos' ?
+                  <th rowSpan="1" colSpan="1" scope="col">{column.des}</th> : '')
             }
-          </tr>)
-        }
-      </tbody>
-    </table>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            dommy3.data.map(el => <tr>
+              {
+                props.columnas.map(column =>
+                  <td className={column.id}>{el[column.id]}</td>)
+              }
+            </tr>)
+          }
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>TOTAL OBRA</td>
+            <td>{dommy3.costo1}</td>
+            <td>{dommy3.incremento1}</td>
+            <td>{dommy3.costo2}</td>
+            <td>{dommy3.incremento2}</td>
+            <td>{dommy3.costo3}</td>
+            <td>{dommy3.incremento3}</td>
+            <td>{dommy3.costo4}</td>
+            <td>{dommy3.incremento4}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>MONTO</td>
+            <td>FACTOR</td>
+          </tr>
+          <tr>
+            <td colSpan="7">MONTO CORREGIDO</td>
+            <td>{dommy3.montoCorregido}</td>
+            <td>{dommy3.factorCorregido}</td>
+          </tr>
+          <tr>
+            <td colSpan="7">DEVOLUCIÓN MÓINIMO ANTICIPO</td>
+            <td>{dommy3.montoDevolucion}</td>
+            <td>{dommy3.factorDevolucion}</td>
+          </tr>
+          <tr>
+            <td colSpan="7">MONTO MÁXIMO AUTORIZADO A CIUDAD</td>
+            <td>{dommy3.montoMaximo}</td>
+            <td>{dommy3.factorMaximo}</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
   );
 }

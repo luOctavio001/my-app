@@ -39,11 +39,8 @@ td.nombre{
   text-align: left;
 }
 
-td.nombre.TOTAL{
-  text-align: right;
-}
 
-tr{
+tbody{
   background-color: #fff;
 }
 
@@ -52,12 +49,8 @@ tr.header-table{
 }
 
 
-tr.footerTOTAL{
-  background-color: cyan;
-  text-align: right;
-}
 
-tr.footer{
+tfoot{
   background-color: cyan;
   text-align: right;
 }
