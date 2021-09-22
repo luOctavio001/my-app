@@ -64,6 +64,10 @@ tfoot{
   width: 110px;
 }
 
+.xshort{
+  width: 60px;
+}
+
 .customGrupBorder{
   border: 1px solid #929292!important;
   border-style: inset;
@@ -112,5 +116,46 @@ tfoot{
 
 }
 
+.customGrupBorder2 {
+  border: 1px solid #929292!important;
+  border-style: inset;
+  padding: 20px 5px 5px 5px;
+  border-radius: 3px;
+  margin: 10px 5px 5px 5px;
+}
 
+.header-modalAB{
+  position: absolute;
+  top: -1px;
+  padding: 1px;
+  background-color: rgb(211 208 201)!important;
+}
 
+.containerBotton{
+  width: 50%;
+}
+
+.scrollTab2{
+  overflow: auto;
+
+}
+
+table.ejercicioB td{
+  min-width: 160px !important;
+}
+
+table.ejercicioA td{
+  min-width: 140px !important;
+}
+
+.partida{
+  text-align: left;
+}
+
+.TOTAL{
+  background-color: cyan;
+}
+
+.partida .TOTAL{
+  text-align: right;
+}
